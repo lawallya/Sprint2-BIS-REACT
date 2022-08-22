@@ -1,0 +1,57 @@
+$primary: #5265E1;
+$secondary:  #FA5959;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+    .aside{
+        position:relative;
+    }
+
+/*.primeraImagen {//esta es la img, pero no aplica lo que pongo
+    width:70%;
+    position: absolute;
+    top: 1rem;
+    left:2rem;
+    z-index: 2;
+    }
+
+    
+
+.fondo {//esta es la figura
+position:absolute;
+content:"";
+height: 70%;
+width: 90%;
+background-color: $primary;
+z-index:1;
+top: 3rem;
+left: 5rem;
+border-bottom-left-radius: 30%;
+}*/
+.imagenes {
+    position: relative;
+    z-index: 1; 
+}
+
+.imagen{
+    width:30%;
+}
+.imagenes:before{
+    
+    position:absolute;
+    content:"";
+    background-color: $primary;
+    right:-50px;
+    top:25%;
+    width: 85%;
+    height: 75%;
+    z-index:-1;
+    border-bottom-left-radius: 35%;
+    }
+

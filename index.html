@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandra</title>
+    <link rel="stylesheet" href="./sass/main.css">
+
+
+</head>
+
+<body>
+    <!--Ejercicio 1:-->
+    <header>
+        <!--Navegador-->
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <!-- Lo que he hecho, el problema es q al reducir
+         el tamaño la hamburuesa no se colapsa-->
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="#">
+                        <img src="./Imagenes/logo-bookmark.svg" alt="Logo Bookmark" style="width:80px;">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span>
+                            <!--tambien funciona sin el span-->
+                            <img src="./Imagenes/icon-hamburger.svg" alt="hamburguesa">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                        <ul class="navbar-nav  ms-sm-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link text-uppercase " href="#">features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase " href="#">pricings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase " href="#">contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-uppercase  btn btn-secondary text-white py-0 text-info shadow mt-2"
+                                    href="#" role="button">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- dos secciones del primer ejercicio-->
+    <main class="container mt-3">
+        <div class="row  align-items-center pt-5  ms-lg-4">
+            <div class="col-sm-6 col-12  order-2 order-sm-1 ">
+                <h1 class="text-capitalize fw-bold fs-3 text-center text-sm-start
+                 ps-lg-5">a simple bookmark manager</h1>
+                <p class="text-muted fs-6 text-center text-sm-start
+                 ps-lg-5">A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see yout sites load instantly.Try it for free.</p>
+                <span class="d-flex text-center text-sm-start
+                  ps-lg-5">
+                    <button type="button" class="btn btn-primary shadow btn-sm btn-sm-lg   text-nowrap me-1 ">Get it on
+                        Chrome</button>
+                    <button type="button" class="btn btn-light shadow  btn-sm btn-sm-lg text-nowrap ms-1">Get it on
+                        Firefox</button>
+                </span>
+            </div>
+            <div class="aside col-12 col-sm-6 order-1 order-sm-2 overflow-hidden  text-center  position-relative">
+                <!--<img src="./Imagenes/illustration-hero.svg" alt="tablet" class="primeraImagen img-fluid" >
+                <div class="fondo"></div>-->
+                <div class="imagenes mb-5">
+                    <img src="Imagenes/illustration-hero.svg" alt="imagen hero" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
